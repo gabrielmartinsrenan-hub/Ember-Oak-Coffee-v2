@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ember & Oak Coffee — thoughtfully sourced coffee, fresh pastries, and a cozy place to slow down.">
+  <title>Ember & Oak Coffee | Your Daily Ritual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">GOOD COFFEE. GOOD PEOPLE. GOOD DAYS.</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Ember and Oak Coffee home">
+      <span class="brand-mark" aria-hidden="true">E<span>&</span>O</span>
+      <span class="brand-name">EMBER <i>&</i> OAK<small>COFFEE HOUSE</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#space">The Space</a>
+      <a href="#visit">Find Us</a>
+      <a class="nav-cta" href="#menu">Explore Menu <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image" role="img" aria-label="Warm, sunlit specialty coffee shop interior"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light"><span></span> YOUR NEIGHBORHOOD COFFEE HOUSE</p>
+        <h1>A little pause.<br><em>A lot of good.</em></h1>
+        <p class="hero-copy">Thoughtfully sourced coffee, fresh-from-the-oven treats, and a place that feels like yours.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#menu">Discover our menu <span>↗</span></a>
+          <a class="text-link light-link" href="#story">Our story <span>↓</span></a>
+        </div>
+      </div>
+      <div class="hero-note"><span class="note-line"></span><span>BREWED WITH INTENTION<br>SHARED WITH HEART</span></div>
+      <div class="hero-index">01 <span>/</span> 03</div>
+    </section>
+
+    <section class="intro section-wrap" id="story">
+      <div class="intro-label"><span class="eyebrow">A SLOWER KIND OF COFFEE</span><span class="vertical-rule"></span><span class="small-muted">EST. 2018</span></div>
+      <div class="intro-main">
+        <h2>Not just your<br>morning <em>coffee.</em></h2>
+        <div class="intro-description">
+          <p>We believe the best things happen when you take a moment. A familiar face at the counter. The first sip of a perfectly pulled espresso. A conversation that lasts a little longer.</p>
+          <p>That’s why we bring together beautiful beans, local ingredients, and a warm welcome — every single day.</p>
+          <a class="underlined-link" href="#space">Get to know us <span>↗</span></a>
+        </div>
+      </div>
+      <div class="intro-stats">
+        <div><strong>01</strong><span>Good coffee,<br>always</span></div>
+        <div><strong>02</strong><span>Locally baked,<br>daily</span></div>
+        <div><strong>03</strong><span>Room for<br>everyone</span></div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span></span> MADE TO MAKE YOUR DAY</p><h2>Good things<br><em>on the menu.</em></h2></div>
+          <p>From your everyday favorite to something new to fall for. Everything is made with care.</p>
+        </div>
+        <div class="menu-tabs" role="group" aria-label="Filter menu items">
+          <button class="menu-tab active" data-filter="all">All favorites</button>
+          <button class="menu-tab" data-filter="coffee">Coffee</button>
+          <button class="menu-tab" data-filter="tea">Tea & more</button>
+          <button class="menu-tab" data-filter="bakery">Bakery</button>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card" data-category="coffee">
+            <div class="menu-photo photo-latte"><span class="menu-number">01</span><span class="menu-tag">HOUSE FAVORITE</span></div>
+            <div class="menu-card-info"><div><h3>Honey Oat Latte</h3><p>Double espresso, oat milk, wildflower honey.</p></div><strong>$5.50</strong></div>
+          </article>
+          <article class="menu-card" data-category="coffee">
+            <div class="menu-photo photo-espresso"><span class="menu-number">02</span></div>
+            <div class="menu-card-info"><div><h3>Oak House Espresso</h3><p>Rich chocolate notes with a smooth finish.</p></div><strong>$3.25</strong></div>
+          </article>
+          <article class="menu-card" data-category="bakery">
+            <div class="menu-photo photo-croissant"><span class="menu-number">03</span></div>
+            <div class="menu-card-info"><div><h3>Butter Croissant</h3><p>Flaky, golden, baked fresh every morning.</p></div><strong>$4.00</strong></div>
+          </article>
+          <article class="menu-card" data-category="tea">
+            <div class="menu-photo photo-matcha"><span class="menu-number">04</span><span class="menu-tag">A LITTLE GREEN</span></div>
+            <div class="menu-card-info"><div><h3>Vanilla Matcha</h3><p>Stone-ground matcha with a hint of vanilla.</p></div><strong>$5.75</strong></div>
+          </article>
+          <article class="menu-card" data-category="bakery">
+            <div class="menu-photo photo-cake"><span class="menu-number">05</span></div>
+            <div class="menu-card-info"><div><h3>Olive Oil Cake</h3><p>Soft citrus cake with a delicate crumb.</p></div><strong>$4.75</strong></div>
+          </article>
+          <article class="menu-card" data-category="tea">
+            <div class="menu-photo photo-tea"><span class="menu-number">06</span></div>
+            <div class="menu-card-info"><div><h3>Wild Berry Iced Tea</h3><p>Bright berries, hibiscus, and a little sunshine.</p></div><strong>$4.50</strong></div>
+          </article>
+        </div>
+        <p class="menu-disclaimer">Our menu changes with the seasons. Ask us about dairy-free and gluten-free options.</p>
+      </div>
+    </section>
+
+    <section class="quote-section" id="space">
+      <div class="quote-image" role="img" aria-label="Coffee and pastry on a wooden café table"></div>
+      <div class="quote-content">
+        <span class="quote-mark">“</span>
+        <blockquote>Come as you are.<br>Stay a little longer.</blockquote>
+        <p>YOUR TABLE IS WAITING.</p>
+        <a class="underlined-link" href="#visit">Come on in <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="visit-section section-wrap" id="visit">
+      <div class="visit-copy">
+        <p class="eyebrow"><span></span> YOUR NEW FAVORITE CORNER</p>
+        <h2>Meet you<br><em>over coffee.</em></h2>
+        <p class="visit-description">Drop in for a quick pick-me-up or settle in for the afternoon. There’s always a seat, something good brewing, and a friendly face behind the bar.</p>
+        <div class="visit-details">
+          <div><span class="detail-icon">⌖</span><div><strong>FIND OUR LITTLE CORNER</strong><p>124 Willow Street, Portland, OR</p></div></div>
+          <div><span class="detail-icon">◷</span><div><strong>WHEN THE DOORS ARE OPEN</strong><p>Mon–Fri: 7am–5pm<br>Sat–Sun: 8am–4pm</p></div></div>
+        </div>
+        <a class="button button-dark" href="https://maps.google.com/?q=124+Willow+Street+Portland+OR" target="_blank" rel="noreferrer">Get directions <span>↗</span></a>
+      </div>
+      <div class="visit-image">
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=85" alt="Inviting coffee shop interior with warm wooden details" loading="lazy">
+        <div class="image-caption"><span>YOUR PLACE TO LAND</span><span>✳ PORTLAND, OR</span></div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-inner">
+        <p class="eyebrow light">A GOOD THING IN YOUR INBOX</p>
+        <h2>Stay for <em>another cup.</em></h2>
+        <p>Seasonal sips, little updates, and the occasional excuse to treat yourself.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <label class="sr-only" for="email">Your email address</label>
+          <input id="email" type="email" placeholder="Your email address" required>
+          <button type="submit" aria-label="Subscribe to newsletter">Join us <span>↗</span></button>
+        </form>
+        <p class="form-message" id="form-message" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-mark" aria-hidden="true">E<span>&</span>O</span>
+      <span class="brand-name">EMBER <i>&</i> OAK<small>COFFEE HOUSE</small></span>
+    </a>
+    <p>Made slowly. Served warmly. © <span id="year"></span> Ember & Oak Coffee.</p>
+    <div class="footer-links"><a href="#story">Our story</a><a href="#menu">Menu</a><a href="#visit">Visit</a><a href="#home" aria-label="Back to top">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>
